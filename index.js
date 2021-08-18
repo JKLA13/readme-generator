@@ -64,7 +64,6 @@ function init() {
     fs.writeFile("README.md", JSON.stringify(data), (err) => {
       err ? console.log(err) : console.log("File was written!");
     });
-    // writeToFile();
   });
 }
 
