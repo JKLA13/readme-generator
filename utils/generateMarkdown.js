@@ -12,8 +12,9 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `## License Link
     //where returns the actuation link of the license
+    return `## License Link
+    
     `;
   }
   return "";
@@ -27,15 +28,16 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+
   ## Description
-  ${date.description}
+  ${data.description}
 
   ## Table of Contents
 
   ## Tests
   ${data.test}
 
-  ##Contribution
+  ## Contribution
   ${data.contribution}
 
 `;

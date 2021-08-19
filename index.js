@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
+const path = require("path");
 
 // inquirer.prompt(questions);
 
@@ -25,13 +26,13 @@ const questions = [
   {
     type: "input",
     name: "description",
-    messgae: "Give a brief description of your project.",
+    message: "Give a brief description of your project.",
   },
   {
     type: "list",
     name: "license",
     message: "What kind of license does your project use?",
-    choices: ["MIT", "Fonzi", "STP"],
+    choices: ["MIT", "Apache", "GPLv2", "None"],
   },
   {
     type: "input",
@@ -53,17 +54,16 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return fs.writeFileSync(path.join(fileName), data);
+}
 
 // TODO: Create a function to initialize app
 function init() {
   //presnt the user the questions
   inquirer.prompt(questions).then((data) => {
-    // console.log(data);
-
-    fs.writeFile("README.md", JSON.stringify(data), (err) => {
-      err ? console.log(err) : console.log("File was written!");
-    });
+    writeToFile("./dist/README.md", generateMarkdown({ ...data }));
+    console.log("Your README has been written!");
   });
 }
 
