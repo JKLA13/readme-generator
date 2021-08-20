@@ -55,6 +55,7 @@ const questions = [
     type: "input",
     name: "usage",
     message: "How do you use this generator?",
+    default: "node index.js",
   },
   {
     type: "input",

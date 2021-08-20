@@ -41,7 +41,7 @@ function generateMarkdown(data) {
 
   * [Usage](#usage)
 
-   ${renderLicenseLink(data.license)}
+  ${renderLicenseLink()}
 
   * [Contributors](#contributor)
 
@@ -56,7 +56,7 @@ function generateMarkdown(data) {
    ${data.usage}
    
    ## License
-   ${data.license}
+   ${renderLicenseSection(data.license)}
    
    ## Contributors
    ${data.contributor}
@@ -66,8 +66,9 @@ function generateMarkdown(data) {
   
   ## Questions
   ${data.questions}
-
-  ${renderLicenseSection(data.license)}
+  </br>
+  My Github: [${data.github}](https://github.com/${data.github})<br/>
+  Questions? Email me: ${data.email}<br/>
 `;
 }
 
