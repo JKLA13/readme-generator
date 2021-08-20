@@ -36,6 +36,14 @@ THEN I am taken to the corresponding section of the README
 
 -https://drive.google.com/file/d/1WJdzgdaasjrIv4fOYl8avmJ4HhLkG38J/view?usp=sharing
 
+## Installation
+
+npm i
+
+## Usage
+
+node index.js
+
 ## Links
 
 -https://github.com/JKLA13/readme-generator
@@ -46,6 +54,10 @@ THEN I am taken to the corresponding section of the README
 *node.js
 *VS Code
 *Git
+
+## Contributors
+
+Jacob Adamson
 
 ## Questions
 
