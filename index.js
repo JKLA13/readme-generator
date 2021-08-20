@@ -49,7 +49,17 @@ const questions = [
   {
     type: "input",
     name: "contributor",
-    message: "How does a user contribute to this project?",
+    message: "Who are the contributors on this project?",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "How do you use this generator?",
+  },
+  {
+    type: "input",
+    name: "questions",
+    message: "What do I do if there is an issue?",
   },
 ];
 
