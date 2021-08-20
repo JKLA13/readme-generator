@@ -3,7 +3,7 @@
   ![GitHub License](https://img.shields.io/badge/license-MIT-blue)
   
   ## Description
-  Collects user input using node.js, and generates a usable README.md file for web dev projects.
+  Using node.js, collects user input and generates a usable README.md for developer projects.
   
   ## Table of Contents
   
